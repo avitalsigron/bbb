@@ -1,27 +1,29 @@
 import math
-import sys
 
 def calc_area(radius):
-    return math.pi * radius * radius
+    """Calculate the area of a circle given its radius."""
+    if radius <= 0:
+        raise ValueError("Radius must be positive")
+    return math.pi * radius ** 2
 
 def add_numbers(a, b):
+    """Add two numbers and return the result."""
     return a + b
 
 def print_result(result):
-    print("The result is: ", result)
+    """Print the result in a formatted way."""
+    print(f"The result is: {result}")
 
-result = calc_area(10)
-print_result(result)
+def main():
+    """Main function to demonstrate usage."""
+    radius = 10
+    area = calc_area(radius)
+    print_result(area)
 
-# פקודה שאינה בשימוש, עלולה להוביל לבעיה בלינטר
-unused_variable = 42
+    number1 = 5
+    number2 = 3
+    sum_result = add_numbers(number1, number2)
+    print_result(sum_result)
 
-# שגיאת קידוד
-def example_function():
-    x =  5
-    if x > 10:
-      print("x is greater than 10")  # בעיית הזחה (indentation)
-    else:
-        print("x is not greater than 10")
-
-example_function()
+if __name__ == "__main__":
+    main()
