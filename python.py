@@ -1,16 +1,17 @@
 # problematic_code.py
 
-# This module lacks a docstring and will trigger an error in pylint for missing module docstring
+# Missing module docstring
 
 def example_function():
-    pass  # This function lacks a docstring and will trigger a warning in pylint
+    # Missing function docstring
+    pass
 
 def another_function(param1, param2):
-    # Function with an overly long line and no docstring
+    # Function with an overly long line and missing docstring
     result = param1 + param2  # This line of code is intentionally long to exceed the default line length limit in pylint and trigger a warning
     return result
 
-bad_variable = 42  # This variable is declared but never used, which will trigger a warning
+bad_variable = 42  # This variable is declared but never used
 
 def function_with_long_line():
     # This line is intentionally long to trigger a warning for line length
