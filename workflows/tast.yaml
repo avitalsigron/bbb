@@ -2,8 +2,6 @@ name: Python Linting
 
 on:
   push:
-    branches:
-      - main
 
 jobs:
   lint:
