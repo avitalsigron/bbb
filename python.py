@@ -9,6 +9,7 @@ def calc_area(radius):
 def add_numbers(a, b):
     """Add two numbers and return the result."""
     return a + b
+
 def print_result(result):
     """Print the result in a formatted way."""
     print(f"The result is: {result}")
