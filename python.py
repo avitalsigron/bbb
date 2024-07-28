@@ -1,4 +1,4 @@
-# Example of problematic Python code
+# example.py
 
 # This is a sample Python script that is intentionally written to trigger pylint errors
 
@@ -15,4 +15,5 @@ def another_function(param1, param2):
     # The function is missing a docstring and has a line that exceeds the recommended length
     result = param1 + param2  # This line has a comment that is too long and will trigger a warning for too long line
     return result
+
 
